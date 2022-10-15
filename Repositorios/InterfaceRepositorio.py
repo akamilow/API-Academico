@@ -17,7 +17,7 @@ class InterfaceRepositorio(Generic[T]):
         self.coleccion = theClass[0].__name__.lower()
 
     def loadFileConfig(self):
-        with open('config.json') as f:
+        with open('configuracion.json') as f:
             data = json.load(f)
         return data
 

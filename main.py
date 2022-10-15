@@ -119,7 +119,7 @@ def eliminarInscripcion(id_inscripcion):
     return jsonify(json)
 ###################################################################################
 def loadFileConfig():
-    with open('config.json') as f:
+    with open('configuracion.json') as f:
         data = json.load(f)
     return data
 

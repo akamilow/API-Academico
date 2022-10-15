@@ -8,3 +8,5 @@ API recreada con base a las guias de clase
 ## 🔗 Repo Original
 
 <a href="https://github.com/tutoriales-mision-tic-2022-unal-ciclo4/tutorial-2-c-final" target="_blank">Link del repositorio</a>
+
+- La configuracion del server y el pool de mongo no estan, hay que crear el json de cero.

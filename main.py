@@ -7,6 +7,7 @@ from waitress import serve
 
 app=Flask(__name__)
 cors = CORS(app)
+
 from Controladores.ControladorEstudiante import ControladorEstudiante
 from Controladores.ControladorDepartamento import ControladorDepartamento
 from Controladores.ControladorMateria import ControladorMateria
@@ -15,6 +16,7 @@ miControladorEstudiante=ControladorEstudiante()
 miControladorDepartamento=ControladorDepartamento()
 miControladorMateria=ControladorMateria()
 miControladorInscripcion=ControladorInscripcion()
+
 ###################################################################################
 @app.route("/",methods=['GET'])
 def test():
@@ -22,6 +24,7 @@ def test():
     json["message"]="Server running ..."
     return jsonify(json)
 ###################################################################################
+
 @app.route("/estudiantes",methods=['GET'])
 def getEstudiantes():
     json=miControladorEstudiante.index()
